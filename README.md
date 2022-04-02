@@ -18,6 +18,7 @@ GamesPlusJames has loads of great content on his channel, including but not rest
 I loved the tutorial and I would like to do it again. Hopefully improve on it and add more content on top. 
 After each video of the tutorial, the repo is going to be updated, with the progress. Details of the updates will be found under the [ Changelog ](#changelog) category.
 - Given that it is a short tutorial (9 videos, about 10 to 25 mins each), there are some bugs and issues here and there that I'd  like to address and fix. 
+- Given that the editor version used in the videos is older, we might encounter issues and errors along the way, which I want to address.
 
 **Please Note**:
 - I'm using Unity version 2021.2.18f1;
