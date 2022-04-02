@@ -62,6 +62,11 @@ public class PlayerController : MonoBehaviour
                 if(Physics.Raycast(ray, out hit))
                 {
                     Instantiate(bulletImpact, hit.point, transform.rotation);
+
+                    if(hit.transform.tag == "Enemy")
+                    {
+                        hit.transform.parent.GetComponent<EnemyController>().TakeDamage();
+                    }
                 }
                 else
                 {
