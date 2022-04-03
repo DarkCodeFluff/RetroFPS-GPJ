@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
                     }
                     currentAmmo--;
                     gunAnim.SetTrigger("Shoot");
+                    AudioController.instance.PlayGunShot();
                     UpdateAmmoUI();
                 }
             }
@@ -116,6 +117,8 @@ public class PlayerController : MonoBehaviour
         }
 
         healthText.text = currentHealth.ToString() + "%";
+
+        AudioController.instance.PlayPlayerHurt();
     }
 
     public void AddHealth(int healAmount)
