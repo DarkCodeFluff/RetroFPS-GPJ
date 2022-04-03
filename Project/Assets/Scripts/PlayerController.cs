@@ -81,6 +81,8 @@ public class PlayerController : MonoBehaviour
                         {
                             hit.transform.parent.GetComponent<EnemyController>().TakeDamage();
                         }
+
+                        AudioController.instance.PlayGunShot();
                     }
                     else
                     {
@@ -88,7 +90,8 @@ public class PlayerController : MonoBehaviour
                     }
                     currentAmmo--;
                     gunAnim.SetTrigger("Shoot");
-                    AudioController.instance.PlayGunShot();
+                    /* // Where audio should be
+                    AudioController.instance.PlayGunShot();*/
                     UpdateAmmoUI();
                 }
             }
