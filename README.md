@@ -99,7 +99,18 @@ After each video of the tutorial, the repo is going to be updated, with the prog
 >Created a script that hides the mouse cursor upon starting the game.
 >
 >**Please Note** : Using the 2021 version of the engine, only TextMeshPro is available (for the text on the hud).
->For things to work properly, in the PlayerController script, you must insert `using  TMPro;` in the beginning of the script, and use this code when creating the variables `public  TextMeshProUGUI  healthText, ammoText;` .
+>For things to work properly, in the PlayerController scripy, you must insert `using  TMPro;` in the beginning of the script, and use this code when creating the variables `public  TextMeshProUGUI  healthText, ammoText;` .
+>
+<br/><br/>
+>## 0.0.7
+>04/03/1000 • 11:55pm GMT+2
+>
+>  Episode 7 - [Retro FPS in Unity #7 - Designing 3D levels with Tilemaps](https://youtu.be/MCRgJIU54pc)
+>
+>Created Level Editor with the Tilemap system and a created a small level for testing.
+>
+>**Please Note** : Using the 2021 version of the engine, there is no need to import and install the 2D tilemap extras for the Rule Tile. It is already included. 
+>What you have to do is right click in the desired folder `Create > 2D > Tiles > Rue Tile`.
 >
 <br/><br/>
 
