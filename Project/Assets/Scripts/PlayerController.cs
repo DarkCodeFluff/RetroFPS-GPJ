@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {    public Rigidbody2D theRB;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject bulletImpact;
     public Animator gunAnim;
+    public Animator anim;
 
     public int currentAmmo = 25;
 
@@ -24,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     private bool hasDied;
     public GameObject deadScreen;
+
+    public TextMeshProUGUI healthText, ammoText;
 
 
     private void Awake() {
@@ -34,6 +38,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        healthText.text = currentHealth.ToString() + "%";
+
+        UpdateAmmoUI();
     }
 
     // Update is called once per frame
@@ -81,7 +88,17 @@ public class PlayerController : MonoBehaviour
                     }
                     currentAmmo--;
                     gunAnim.SetTrigger("Shoot");
+                    UpdateAmmoUI();
                 }
+            }
+
+            if(moveInput != Vector2.zero)
+            {
+                anim.SetBool("isMoving", true);
+            }
+            else
+            {
+                anim.SetBool("isMoving", false);
             }
         }
         
@@ -95,7 +112,10 @@ public class PlayerController : MonoBehaviour
         {
             deadScreen.SetActive(true);
             hasDied = true;
+            currentHealth = 0;
         }
+
+        healthText.text = currentHealth.ToString() + "%";
     }
 
     public void AddHealth(int healAmount)
@@ -106,5 +126,12 @@ public class PlayerController : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        healthText.text = currentHealth.ToString() + "%";
+    }
+
+    public void UpdateAmmoUI()
+    {
+        ammoText.text = currentAmmo.ToString();
     }
 }
