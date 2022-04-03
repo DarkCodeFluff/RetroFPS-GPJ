@@ -139,7 +139,7 @@ After each video of the tutorial, the repo is going to be updated, with the prog
 >
 >As of now, I will be focusing on fixing bugs, polishing and adding new features to the project. 
 >
->The project as it is right after the tutorial can be found under `tag > 0.1.0`
+>The project as it is right after the tutorial can be found under `tag > 0.1.0-Final-Point`
 >
 >Created a small level that contains all the features developed until now. Player, enemies, pickup items, etc.. 
 >
