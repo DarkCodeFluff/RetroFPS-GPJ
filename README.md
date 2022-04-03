@@ -128,6 +128,7 @@ After each video of the tutorial, the repo is going to be updated, with the prog
 >
 >  Episode 9 - [Retro FPS in Unity #9 - Adding Audio](https://youtu.be/9trRPDXfLDA)
 >
+>Created an Audio Controller, added a background music and sounds for: health pickup, ammo pickup, enemy death, enemy shooting, player shooting, player taking damage. 
 >**This update concludes the tutorial.**
 >
 <br/><br/>
