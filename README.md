@@ -114,3 +114,20 @@ After each video of the tutorial, the repo is going to be updated, with the prog
 >
 <br/><br/>
 
+>## 0.0.8
+>04/03/1000 • 09:32pm GMT+2
+>
+>  Episode 8 - [Retro FPS in Unity #8 - Adding Doors](https://youtu.be/upFezlgKQbQ)
+>
+>Created a fully functioning door, that opens upon entering a trigger collider.
+>
+<br/><br/>
+
+>## 0.0.9
+>04/03/1000 • 12:56pm GMT+2
+>
+>  Episode 9 - [Retro FPS in Unity #9 - Adding Audio](https://youtu.be/9trRPDXfLDA)
+>
+>Created an Audio Controller, added a background music and sounds for: health pickup, ammo pickup, enemy death, enemy shooting, player shooting, player taking damage. 
+>
+<br/><br/>
