@@ -99,7 +99,7 @@ After each video of the tutorial, the repo is going to be updated, with the prog
 >Created a script that hides the mouse cursor upon starting the game.
 >
 >**Please Note** : Using the 2021 version of the engine, only TextMeshPro is available (for the text on the hud).
->For things to work properly, in the PlayerController scripy, you must insert `using  TMPro;` in the beginning of the script, and use this code when creating the variables `public  TextMeshProUGUI  healthText, ammoText;` .
+>For things to work properly, in the PlayerController script, you must insert `using  TMPro;` in the beginning of the script, and use this code when creating the variables `public  TextMeshProUGUI  healthText, ammoText;` .
 >
 <br/><br/>
 
