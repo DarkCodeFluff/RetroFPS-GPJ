@@ -144,3 +144,22 @@ After each video of the tutorial, the repo is going to be updated, with the prog
 >Created a small level that contains all the features developed until now. Player, enemies, pickup items, etc.. 
 >
 <br/><br/>
+
+>## 0.1.1
+>04/04/1000 • 03:34pm GMT+2
+>
+>Detected and Fixed issues :
+> - Enemy overlaps through floor and ceiling tiles;
+> - Enemy bullets fly indefinitely;
+> - Enemy bullets pass through walls;
+> - Enemy can't be shot when it is too close;
+> - GunShot has no sound when shooting anything but wall or enemy;
+> - Shooting the Door prefab doesn't create a Bullet Impact; 
+> - Player can shoot through the Door prefab;
+> - Camera clipping through walls when walking close to them;
+> - Camera can rotates 360° overhead;
+> - Lowered sound of background music and other sfx to make it more playable;
+>
+> The solutions & fixes are going to be displayed somewhere else, in order to keep the README file cleaner.
+>
+<br/><br/>
