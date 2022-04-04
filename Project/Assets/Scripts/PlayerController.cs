@@ -4,13 +4,15 @@ using UnityEngine;
 using TMPro;
 
 public class PlayerController : MonoBehaviour
-{    public Rigidbody2D theRB;
+{    
+    public Rigidbody2D theRB;
     public static PlayerController instance;
 
     public float moveSpeed = 5f;
     private Vector2 moveInput;
     private Vector2 mouseInput;
-
+    private float maxAngle = 160f;
+    private float minAngle = 10f;
     public float mouseSensitivity = 1f;
 
     public Camera viewCam;
@@ -65,6 +67,9 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z - mouseInput.x);
             viewCam.transform.localRotation = Quaternion.Euler(viewCam.transform.localRotation.eulerAngles + new Vector3(0f, mouseInput.y, 0f));
 
+            Vector3 RotAmount = viewCam.transform.localRotation.eulerAngles + new Vector3(0f, mouseInput.y, 0f);
+            viewCam.transform.localRotation = Quaternion.Euler(RotAmount.x, Mathf.Clamp(RotAmount.y, minAngle , maxAngle) , RotAmount.z);
+
 
             // Shooting
             if(Input.GetMouseButtonDown(0))
@@ -81,8 +86,6 @@ public class PlayerController : MonoBehaviour
                         {
                             hit.transform.parent.GetComponent<EnemyController>().TakeDamage();
                         }
-
-                        AudioController.instance.PlayGunShot();
                     }
                     else
                     {
@@ -90,8 +93,7 @@ public class PlayerController : MonoBehaviour
                     }
                     currentAmmo--;
                     gunAnim.SetTrigger("Shoot");
-                    /* // Where audio should be
-                    AudioController.instance.PlayGunShot();*/
+                    AudioController.instance.PlayGunShot();
                     UpdateAmmoUI();
                 }
             }

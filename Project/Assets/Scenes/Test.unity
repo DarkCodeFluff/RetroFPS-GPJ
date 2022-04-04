@@ -396,7 +396,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4655f5a109957fb4496c4e19a921beac, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -675,7 +675,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 378e6d3f6a5b54c41a0dcfc457b2d533, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.55
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -919,7 +919,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 077449fe801af9a40a8d72e734bb439c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1104,7 +1104,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d6aa157813a7d384eb6bf9e50e28336b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1694,7 +1694,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0e1f8266e1403624a9e553439424d0f9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.85
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1879,7 +1879,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 16f0102d6d3d4154d869cb8b83b161f7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2012,8 +2012,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.1
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -12214,7 +12214,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a8678d5d5ca31e64fafda6dfc86cf6f4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22828,6 +22828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7831685263122852428, guid: d7d83742c4b13ec4799288e2621af5c8, type: 3}
+      propertyPath: shouldShoot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7831685263122852429, guid: d7d83742c4b13ec4799288e2621af5c8, type: 3}
       propertyPath: m_RootOrder
       value: 5
